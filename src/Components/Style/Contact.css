@@ -1,0 +1,79 @@
+.contact {
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-icon .items {
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid yellow;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-icon .items:hover {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .icons {
+  font-size: 2rem;
+  color: white;
+}
+.para{
+  width: 25%;
+  margin: auto;
+}
+
+/* Responsive Design */
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+  .contact-icon .items {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .contact-icon .icons {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small screens (480px to 767px) */
+@media (max-width: 767px) {
+  .contact-icon .items {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contact-icon .icons {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small screens (smaller than 480px) */
+@media (max-width: 480px) {
+  .contact-icon .items {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+  }
+
+  .contact-icon .icons {
+    font-size: 1.3rem;
+  }
+}

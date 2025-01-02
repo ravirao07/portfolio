@@ -1,0 +1,127 @@
+.expe {
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.exp-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin: 20px auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+.description-exp{
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+/* Hover effect for zoom and shadow */
+.exp-items:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 6px 8px rgba(255, 0, 0, 0.4),   
+        0 10px 12px rgba(0, 255, 0, 0.4),   
+        0 14px 15px rgba(0, 0, 255, 0.4),  
+        0 18px 20px rgba(255, 255, 0, 0.4),
+        0 22px 25px rgba(255, 0, 255, 0.4),
+        0 26px 30px rgba(0, 255, 255, 0.4);
+    z-index: 10;
+}
+
+.exp-items .left img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+p{
+    font-size: 16px;
+  }
+
+/* Responsive Design */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .expe {
+        max-width: 1000px;
+    }
+
+    .exp-items {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+    .exp-items {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .exp-items .left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .exp-items .right {
+        margin-top: 15px;
+    }
+}
+
+/* Small screens (480px to 767px) */
+@media (max-width: 767px) {
+    .exp-items {
+        
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .exp-items .left img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .exp-items h3 {
+        font-size: 1.2rem;
+    }
+
+    .exp-items h4, .exp-items h5 {
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens (smaller than 480px) */
+@media (max-width: 480px) {
+    .exp-items {
+        padding: 10px;
+    }
+
+    .exp-items .left img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .exp-items h3 {
+        font-size: 1.1rem;
+    }
+
+    .exp-items h4, .exp-items h5 {
+        font-size: 0.9rem;
+    }
+
+    .exp-items h5 {
+        margin: 5px 0;
+    }
+}

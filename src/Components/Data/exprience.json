@@ -1,0 +1,39 @@
+[
+  {
+    "id": 3,
+    "role": "S.VINODKUMAR DIAMONDS PVT.LTD",
+    "organisation": "Industry",
+    "experience": "Present",
+    "location": "Surat, Gujarat ",
+    "position": [
+      "I Work as a Data Entry Operator in Industry",
+      "I do This Work inside the Oracle Software"
+    ],
+    "imageSrc": "company/svk.jfif"
+  },
+  {
+    "id": 3,
+    "role": "AM/NS Steel India",
+    "organisation": "Engineering industry",
+    "experience": "3 Years",
+    "location": "Hazira, Surat Gujarat ",
+    "position": [
+      "Worked in the operation department",
+      "Filde Controller "
+    ],
+    "imageSrc": "company/amnss.png"
+  },
+  {
+    "id": 3,
+    "role": "Miranda Tools and Hacksaw Blade",
+    "organisation": "Engineering tools",
+    "experience": "6 Months",
+    "location": "Ankleshwar, Gujarat ",
+    "position": [
+      "Worked in the Quality Control department",
+      "And Worked as shift incharge"
+    ],
+    "imageSrc": "company/miranda.jpeg"
+  }
+  
+]

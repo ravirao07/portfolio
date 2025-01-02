@@ -1,0 +1,150 @@
+/* Base styling */
+.Home {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Adds spacing between left and right sections */
+}
+
+.Home .left {
+    background-color: var(--bg-color);
+    width: 45%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+}
+
+.Home .right .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .right .img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 5px solid yellow;
+    animation: imganimation 3s infinite;
+}
+
+/* Keyframes for image animation */
+@keyframes imganimation {
+    0% {
+        border-color: blue;
+        transform: translateY(0px);
+        box-shadow: 10px 10px 100px 50px blue;
+    }
+    25% {
+        border-color: rgb(239, 244, 11);
+        box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+    }
+    50% {
+        border-color: rgb(12, 12, 199);
+        transform: translateY(10px);
+        box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+    }
+    75% {
+        border-color: rgb(130, 217, 160);
+        box-shadow: 10px 10px 100px 50px rgb(130, 217, 199);
+    }
+    100% {
+        border-color: rgb(50, 55, 205);
+        transform: translateY(0px);
+        box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    }
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .Home {
+        height: 80vh;
+    }
+
+    .Home .left {
+        width: 45%;
+    }
+
+    .Home .right .img img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+    .Home {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .Home .left {
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+
+    .Home .right .img img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+/* Small screens (480px to 767px) */
+@media (max-width: 767px) {
+    .Home {
+        flex-direction: column;
+        padding: 25px 10px;
+    }
+
+    .Home .left {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .Home .right .img img {
+        height: 220px;
+        width: 220px;
+    }
+
+    .Home h1 {
+        font-size: 1.5rem;
+    }
+
+    .Home .btn {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Extra small screens (smaller than 480px) */
+@media (max-width: 480px) {
+    .Home {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .Home .left {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Home .right .img img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .Home h1 {
+        font-size: 1.3rem;
+    }
+
+    .Home .btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}

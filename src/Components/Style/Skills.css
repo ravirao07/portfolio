@@ -1,0 +1,87 @@
+.skills {
+  max-width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.skills .items .item {
+  width: calc(33.33% - 40px);
+  background-color: black;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills .items .item:hover {
+  transform: scale(1.15);
+}
+
+.skills .items .item img {
+  width: 70px;
+}
+.description-skil{
+  font-size: 16px;
+}
+
+/* Responsive Design */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .skills {
+      max-width: 900px;
+  }
+
+  .skills .items .item {
+      width: calc(33.33% - 40px);
+  }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+  .skills .items .item {
+      width: calc(50% - 40px);
+  }
+
+  .skills .items .item img {
+      width: 60px;
+  }
+}
+
+/* Small screens (480px to 767px) */
+@media (max-width: 767px) {
+  .skills .items .item {
+      width: calc(50% - 20px);
+  }
+
+  .skills .items .item img {
+      width: 50px;
+  }
+}
+
+/* Extra small screens (smaller than 480px) */
+@media (max-width: 480px) {
+  .skills .items .item {
+      width: calc(100% - 40px);
+      margin: 10px 0;
+  }
+
+  .skills .items .item img {
+      width: 45px;
+  }
+
+  .skills h1 {
+      font-size: 1.5rem;
+  }
+}

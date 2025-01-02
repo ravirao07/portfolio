@@ -1,0 +1,9 @@
+:root{
+    --box-shadow: 5px 5px 10px 10px rgba(101,175,10,0.5);
+    --bg-color:rgba(40,47,97);
+}
+body{
+    background-color: rgb(13, 22, 36);
+    /* background-color: black; */
+    color: white;
+}
